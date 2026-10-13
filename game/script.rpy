@@ -156,7 +156,7 @@ screen map_button():
 
 label start:
     show screen map_screen
-    renpy.pause(hard=True)
+    $ renpy.pause(hard=True)
 jump outside_entrance
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
