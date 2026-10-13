@@ -13,6 +13,8 @@
 ## The _() surrounding the string marks it as eligible for translation.
 
 define config.name = _("Velkommen til FunkWeb - Helsfyr")
+define config.screen_width  = 1280
+define config.screen_height = 905
 
 
 ## Determines if the title given above is shown on the main menu screen. Set

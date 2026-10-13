@@ -143,8 +143,20 @@ define liv = Character("Liv")
 define sondre = Character("Sondre")
 # The game starts here.
 
+screen map_button():
+    zorder 100
+    button:
+        xpos 20
+        ypos 20
+        padding (12, 8)
+        background "#342e57"
+        hover_background "#fab63a"
+        action Show("map_screen")
+        text "🗺 Kart" color "#ffffff" size 24 hover_color "#342e57"
+
 label start:
-jump outside_entrance
+    show screen map_screen
+    renpy.pause(hard=True)
 jump outside_entrance
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
